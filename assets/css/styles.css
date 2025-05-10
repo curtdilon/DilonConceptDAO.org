@@ -1,0 +1,731 @@
+/* 
+   Main Stylesheet for Dilon Concept Website
+   Author: Dilon Concept Foundation
+   Version: 1.0
+*/
+
+/* ===== Base Styles ===== */
+:root {
+  --primary-color: #43286f;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --dark-color: #2c3e50;
+  --light-color: #ecf0f1;
+  --text-color: #333333;
+  --light-text-color: #ffffff;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--dark-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+/* ===== Header ===== */
+#header {
+  /* position: fixed; Removed fixed positioning */
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  background-color: var(--primary-color); /* Set background to primary color */
+  /* box-shadow: var(--box-shadow); Removed shadow */
+  z-index: 1000;
+  padding: 20px 0; /* Standard padding */
+  /* background-image: url("https://res.cloudinary.com/dwalrdqas/image/upload/t_LogoFitDC/v1746384217/dilon_concept_on_mockup_1_dczk1q.png"); */ /* Removed background image */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  min-height: auto; /* Reset min-height */
+  display: flex; /* Use flexbox to center logo if needed */
+  align-items: center; /* Center logo vertically */
+  justify-content: center; /* Center logo horizontally */
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px;
+}
+
+/* Main Navigation Bar Style */
+.main-nav {
+  background-color: var(--primary-color); /* Make menu bar same color as header (assuming primary-color after image removal) */
+  padding: 10px 0; /* Padding for the navigation bar */
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center; /* Center align menu items */
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+.main-nav a {
+  /* Inherit from .btn */
+  display: inline-block;
+  padding: 10px 15px; /* Slightly smaller padding for menu */
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  /* Inherit from .btn-primary */
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  margin: 0 5px; /* Add some horizontal margin between buttons */
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  /* Inherit from .btn-primary:hover */
+  background-color: var(--dark-color);
+  color: var(--light-text-color); /* Ensure text color remains light on hover */
+}
+
+/* Highlight class styling removed as all items now match */
+
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  padding: 150px 0 80px;
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--light-text-color);
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===== Manifesto Section ===== */
+.manifesto-section {
+  background-color: var(--dark-color);
+  color: var(--light-text-color);
+  text-align: center;
+}
+
+.manifesto-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.principle {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.principle:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Pillars Section ===== */
+.pillars-section {
+  background-color: var(--light-color);
+}
+
+.pillars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pillar {
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.pillar:hover {
+  transform: translateY(-5px);
+}
+
+.pillar img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* ===== Dilonland Section ===== */
+.dilonland-section {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+}
+
+.dilonland-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.dilonland-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ===== Blog Preview Section ===== */
+.blog-preview-section {
+  background-color: var(--light-color);
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.blog-post {
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.post-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.view-all-posts {
+  text-align: center;
+}
+
+/* ===== Support Section ===== */
+.support-section {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  text-align: center;
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.support-option {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.support-option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== FAQ Section ===== */
+.faq-section {
+  background-color: var(--light-color);
+}
+
+.faq-container {
+  margin: 40px 0;
+}
+
+.faq-item {
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.faq-answer {
+  padding: 0 20px 20px;
+  display: none;
+}
+
+.faq-item.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.view-all-faq {
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+#footer {
+  background-color: var(--dark-color); /* Set background to dark color */
+  color: var(--light-text-color);
+  padding: 60px 0 23px; /* Adjusted top padding, bottom increased by 15% */
+  /* background-image: url("https://res.cloudinary.com/dwalrdqas/image/upload/t_LogoFitDC/v1746384217/dilon_concept_on_mockup_1_dczk1q.png"); */ /* Removed background image */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  position: relative; /* Keep for potential future use, overlay is removed */
+}
+
+/* Ensure footer content is above the overlay */
+#footer .container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer-links-column h4 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.footer-links-column ul {
+  list-style: none;
+}
+
+.footer-links-column li {
+  margin-bottom: 10px;
+}
+
+.footer-links-column a {
+  color: #ccc;
+}
+
+.footer-links-column a:hover {
+  color: var(--light-text-color);
+}
+
+.footer-bottom {
+  /* display: flex; */ /* Removed flex for simple centering */
+  /* justify-content: space-between; */ /* Removed justify-content */
+  /* align-items: center; */ /* Removed align-items */
+  text-align: center; /* Center align all content */
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links a {
+  color: var(--light-text-color);
+  margin-left: 15px;
+  font-size: 1.2rem;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .dilonland-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .main-nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-text-color);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: none;
+  }
+  
+  .main-nav.active {
+    display: block;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+  }
+  
+  .main-nav li {
+    margin: 10px 0;
+  }
+  
+  .hero-section {
+    padding: 120px 0 60px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-links {
+    margin-top: 15px;
+  }
+  
+  .social-links a:first-child {
+    margin-left: 0;
+  }
+}
+
+/* ===== Page-Specific Styles ===== */
+
+/* About Page */
+.about-hero {
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../images/about-bg.jpg');
+}
+
+/* Fundraising Page */
+.donation-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.donation-option {
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.gofundme-container {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* Volunteer Page */
+.volunteer-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.benefit-card {
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.benefit-card img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.volunteer-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--light-text-color);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+/* Blog Page */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+/* Single Blog Post */
+.blog-post-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post-header {
+  margin-bottom: 30px;
+}
+
+.blog-post-meta {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.blog-post-image {
+  margin-bottom: 30px;
+}
+
+.blog-post-body {
+  line-height: 1.8;
+}
+
+/* Contact Page */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.contact-card {
+  background-color: var(--light-text-color);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+
+/* Footer Logo Styling (to make SVG white) */
+.footer-logo-img {
+  filter: brightness(0) invert(1);
+  height: 180px; /* Maintain original height */
+  margin-bottom: 20px; /* Maintain original margin */
+}
