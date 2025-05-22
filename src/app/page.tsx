@@ -1,62 +1,108 @@
-import Image from "next/image";
+import React from 'react';
+import Layout from '@/components/Layout';
+import Image from 'next/image';
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
-      {/* Hero Section */}
-      <section className="text-center py-16 md:py-24">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-800">
-          Empowering Communities Through Decentralized Governance
+    <Layout>
+      {/* Hero Section with the provided image */}
+      <section className="relative h-[600px] bg-[#4B2E83] overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image 
+            src="/images/hero-image.png" 
+            alt="Dilon Concept" 
+            width={1665} 
+            height={1249} 
+            className="object-contain"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-white p-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-center">
+            DILON CONCEPT
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-light mb-8 text-center">
+            A Revolutionary Approach to Societal Restructuring
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a 
+              href="/about-concept" 
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-md transition-colors"
+            >
+              Discover the Dilon Concept
+            </a>
+            <a 
+              href="/dilonland-dao" 
+              className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-8 rounded-md transition-colors"
+            >
+              Explore Dilonland DAO
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Award-winning Content Section (similar to advancementstv.com) */}
+      <section className="py-16 px-4">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">
+          Revolutionary Resource-Based Economy
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-600 max-w-3xl mx-auto">
-          Discover how the Dilon Concept DAO is revolutionizing resource management and fostering global collaboration.
-        </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-lg sm:text-xl transition-colors duration-200">
-          Learn More
-        </button>
+        <div className="w-full max-w-3xl mx-auto h-1 bg-yellow-400 mb-12"></div>
+        
+        <div className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed">
+          <p className="mb-6">
+            Shining a light on a new approach to societal organization and resource management. The Dilon Concept addresses several important issues and topics currently impacting society, proposing a comprehensive framework for a more equitable future.
+          </p>
+          <p className="mb-6">
+            DilonConceptDAO covers a vast number of principles and ideas, featuring innovative approaches dedicated to shaping, molding, and transforming our world. Aiming to create a new level of social awareness, DilonConceptDAO brings this vital information to the public in an effort to educate on the effects of such significant contributions.
+          </p>
+        </div>
       </section>
 
-      {/* About Us Snippet */}
-      <section id="about-snippet" className="w-full max-w-5xl mx-auto mb-16 md:mb-24 bg-gray-100 p-6 sm:p-8 md:p-10 rounded-lg shadow-md">
-        <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800">Our Vision</h3>
-        <p className="text-md sm:text-lg text-gray-700 mb-6 leading-relaxed">
-          The Dilon Concept DAO aims to create a transparent and equitable framework for managing shared resources. We leverage blockchain technology to empower communities and promote sustainable development. Our goal is to build a global network of interconnected DAOs working towards a common good.
-        </p>
-        <a href="/about" className="text-blue-600 hover:text-blue-700 font-semibold text-md sm:text-lg transition-colors duration-200">
-          Explore Our Mission &rarr;
-        </a>
-      </section>
-
-      {/* Key Features Section */}
-      <section id="features" className="w-full max-w-5xl mx-auto mb-16 md:mb-24">
-        <h3 className="text-2xl sm:text-3xl font-bold text-center mb-10 md:mb-12 text-gray-800">Key Features</h3>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h4 className="text-xl sm:text-2xl font-semibold mb-3 text-blue-600">Decentralized Governance</h4>
-            <p className="text-md sm:text-lg text-gray-700 leading-relaxed">Decisions made by the community, for the community, ensuring fairness and transparency.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h4 className="text-xl sm:text-2xl font-semibold mb-3 text-blue-600">Transparent Resource Management</h4>
-            <p className="text-md sm:text-lg text-gray-700 leading-relaxed">Track resources and their allocation in real-time on the blockchain.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h4 className="text-xl sm:text-2xl font-semibold mb-3 text-blue-600">Global Collaboration</h4>
-            <p className="text-md sm:text-lg text-gray-700 leading-relaxed">Connect with like-minded individuals and organizations worldwide to build a better future.</p>
+      {/* Key Pillars Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Key Pillars of Our Vision</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-3">Resource-Based Economy</h3>
+              <p className="text-gray-600 mb-4">
+                Transitioning towards a system where access to Earth's resources is a fundamental right, managed for collective well-being, not profit.
+              </p>
+              <a href="/about-concept#resource-economy" className="text-yellow-500 hover:text-yellow-700 font-semibold">Learn more &rarr;</a>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-3">Meritocratic Governance</h3>
+              <p className="text-gray-600 mb-4">
+                Leadership based on proven abilities in resource management and societal contribution, fostering a truly capable and responsible governing body.
+              </p>
+              <a href="/governance#meritocracy" className="text-yellow-500 hover:text-yellow-700 font-semibold">Learn more &rarr;</a>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-3">NFT-Powered Citizenship</h3>
+              <p className="text-gray-600 mb-4">
+                A novel approach to citizenship within Dilonland DAO, utilizing NFTs to represent rights, responsibilities, and participation levels.
+              </p>
+              <a href="/citizenship-nfts#nft-details" className="text-yellow-500 hover:text-yellow-700 font-semibold">Learn more &rarr;</a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section id="cta" className="w-full max-w-5xl mx-auto text-center bg-blue-600 text-white p-10 sm:p-12 md:p-16 rounded-lg shadow-xl">
-        <h3 className="text-2xl sm:text-3xl font-bold mb-6">Get Involved</h3>
-        <p className="text-md sm:text-lg mb-10 max-w-2xl mx-auto">
-          Join the Dilon Concept DAO community and contribute to a more sustainable and equitable future. Whether you are a developer, a researcher, or simply passionate about our mission, there are many ways to get involved.
+      <section className="py-16 bg-[#4B2E83] text-white text-center">
+        <h2 className="text-3xl font-bold mb-6">Join Us on This Journey</h2>
+        <p className="text-lg mb-8 max-w-3xl mx-auto px-4">
+          The Dilon Concept and Dilonland DAO represent a bold step towards a more sustainable and equitable world. We invite you to explore our ideas, engage with our community, and consider how you can be a part of this transformative initiative.
         </p>
-        <button className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-lg sm:text-xl transition-colors duration-200">
-          Join Our Community
-        </button>
+        <a 
+          href="/contact" 
+          className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-md transition-colors"
+        >
+          Get Involved
+        </a>
       </section>
-    </div>
+    </Layout>
   );
-}
+};
 
+export default HomePage;

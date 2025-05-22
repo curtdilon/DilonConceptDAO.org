@@ -1,38 +1,104 @@
-# Dilon Concept DAO - Simplified Website
+# DilonConceptDAO Website
 
-This repository contains the files for the simplified Dilon Concept DAO website. It is a static HTML, CSS, and JavaScript website designed to be easily testable locally and deployable via Netlify.
+A Next.js website for the DilonConceptDAO virtual country implementation of the Dilon Concept.
+
+## Overview
+
+This website serves as the online presence for DilonConceptDAO, a virtual country implementation of the Dilon Concept that allows for testing resource-based economic principles in a controlled environment. The site provides information about the Dilon Concept, the virtual country implementation, governance structure, citizenship NFTs, and more.
+
+## Features
+
+- Responsive design with mobile and desktop support
+- Yellow primary theme color (#FFFF00)
+- Top navigation menu
+- Informative pages about the Dilon Concept and DAO
+- Blog section for updates and news
+- FAQ section for common questions
+- Contact form for inquiries
+- Netlify analytics integration
+
+## Tech Stack
+
+- Next.js 13+ (React framework)
+- TypeScript
+- Tailwind CSS for styling
+- Netlify for hosting and analytics
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16.8.0 or later
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/DilonConceptDAO_site.git
+   cd DilonConceptDAO_site
+   ```
+
+2. Install dependencies:
+   ```
+   pnpm install
+   ```
+   or with npm:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   pnpm dev
+   ```
+   or with npm:
+   ```
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Deployment
+
+### Netlify Deployment
+
+This site is configured for deployment on Netlify:
+
+1. Connect your GitHub repository to Netlify
+2. Configure the build settings:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+3. Set up your custom domain (dilonconceptdao.org)
+
+### Netlify Analytics Configuration
+
+The site includes Netlify Analytics integration. To enable it:
+
+1. In the Netlify dashboard, enable Analytics for your site
+2. Get your Netlify Analytics ID
+3. Replace `YOUR-NETLIFY-ANALYTICS-ID` in `src/app/layout.tsx` with your actual ID
 
 ## Project Structure
 
-```
-website_v2/
-├── index.html             # Main HTML file
-├── netlify.toml           # Netlify deployment configuration
-├── src/
-│   ├── app.js             # JavaScript for interactivity
-│   ├── styles.css         # CSS for styling
-│   └── images/
-│       └── dilon_concept_logo.png # Logo image
-├── local_testing_documentation.md # Internal documentation of local tests performed
-└── local_testing_instructions_for_user.md # Instructions for user to test locally
-```
+- `src/app/` - Next.js app router pages
+- `src/components/` - Reusable React components
+- `src/hooks/` - Custom React hooks
+- `src/lib/` - Utility functions and libraries
+- `public/` - Static assets like images
 
-## How to Test Locally
+## Contributing
 
-1.  **Prerequisites:** Ensure you have Python 3 installed.
-2.  **Clone/Download:** Get the files into a local directory.
-3.  **Navigate to Directory:** Open your terminal/command prompt and `cd` into the `website_v2` directory (the one containing `index.html`).
-4.  **Start Server:** Run `python3 -m http.server 8000` (or another port if 8000 is in use).
-5.  **Open in Browser:** Go to `http://localhost:8000` in your web browser.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Refer to `local_testing_instructions_for_user.md` for more detailed steps and troubleshooting.
+## License
 
-## Deployment to Netlify
+This project is proprietary and confidential. All rights reserved.
 
-1.  Push this `website_v2` directory (including `netlify.toml` at its root) to a GitHub repository.
-2.  Connect your GitHub repository to Netlify.
-3.  Netlify should automatically detect the settings from `netlify.toml`.
-    *   **Publish directory:** `.` (relative to the root of the `website_v2` folder in your repo)
-    *   **Build command:** (leave blank or as specified in `netlify.toml` - none needed for this static site)
-4.  Deploy the site.
+## Contact
 
+For questions or support, please contact info@dilonconceptdao.org
