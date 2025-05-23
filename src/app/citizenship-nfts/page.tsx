@@ -8,147 +8,132 @@ const CitizenshipNFTsPage: React.FC = () => {
         {/* Hero Section */}
         <section className="bg-[#4B2E83] text-white py-16 px-4">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6">Citizenship & NFTs</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6">Citizenship Options</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Blockchain-powered citizenship for the Dilonland virtual country
+              Participation models for governments and citizens in the DilonConceptDAO platform
             </p>
           </div>
         </section>
 
-        {/* NFT Citizenship Overview Section */}
+        {/* Citizenship Overview Section */}
         <section className="py-12 px-4">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">NFT Citizenship Overview</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Platform Participation Overview</h2>
             <div className="w-full max-w-3xl mx-auto h-1 bg-yellow-400 mb-8"></div>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              The Dilonland DAO implements a novel approach to citizenship through Non-Fungible Tokens (NFTs) that represent different levels of rights, responsibilities, and participation within the virtual country. This system creates a transparent, verifiable record of citizenship status while enabling a meritocratic advancement path.
+              DilonConceptDAO provides a platform for governments to build virtual replicas of their countries to test and implement Dilon Concept principles. This platform offers various participation options for both governments and their citizens, creating a comprehensive ecosystem for exploring resource-based economic models.
             </p>
             
             <div className="bg-gray-50 border-l-4 border-yellow-400 p-6 mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Benefits of NFT Citizenship</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Key Benefits of Government Participation</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">•</span>
-                  <span><strong>Verifiable Ownership:</strong> Blockchain-based proof of citizenship status</span>
+                  <span><strong>Risk-Free Testing:</strong> Experiment with resource-based economic principles in a controlled environment</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">•</span>
-                  <span><strong>Transparent Advancement:</strong> Clear criteria for progression between tiers</span>
+                  <span><strong>Citizen Engagement:</strong> Involve citizens in a new form of participatory governance</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">•</span>
-                  <span><strong>Resource Rights:</strong> Tokenized representation of resource access and management rights</span>
+                  <span><strong>Resource Optimization:</strong> Develop and test advanced resource management systems</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">•</span>
-                  <span><strong>Governance Participation:</strong> Structured involvement in decision-making processes</span>
+                  <span><strong>Data-Driven Insights:</strong> Gather valuable data on resource allocation and management</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-500 mr-2">•</span>
-                  <span><strong>Community Building:</strong> Fostering a sense of belonging and shared purpose</span>
+                  <span><strong>International Collaboration:</strong> Connect with other participating governments in a shared ecosystem</span>
                 </li>
               </ul>
             </div>
           </div>
         </section>
 
-        {/* Citizenship Tiers Section */}
+        {/* Citizenship Options Section */}
         <section className="py-12 px-4 bg-gray-50">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Citizenship Tiers</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Citizenship Options</h2>
             <div className="w-full max-w-3xl mx-auto h-1 bg-yellow-400 mb-8"></div>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              The Dilonland DAO features four NFT citizenship tiers, each representing increasing levels of rights, responsibilities, and participation in governance. Advancement between tiers is based on merit and contribution to the community.
+              The DilonConceptDAO platform offers several citizenship options for participation in virtual country replicas, each with distinct rights and responsibilities. These options ensure broad participation while maintaining a meritocratic structure.
             </p>
             
             <div className="space-y-8">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <div className="flex items-center mb-4">
-                  <div className="bg-yellow-400 text-white p-2 rounded-full mr-4">
-                    <span className="block text-center font-bold">1</span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800">Resource Citizen</h3>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Founding Citizen DC [Country]</h3>
                 <p className="text-gray-700 mb-4">
-                  The entry-level citizenship tier, granted to all initial participants. Resource Citizens have basic access to the virtual environment and can participate in community discussions.
+                  For citizens of participating countries who actively work on the launch and development of their country's virtual replica. These individuals contribute expertise, time, and resources to establish the foundation of their nation's digital twin.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-gray-800 mb-2">Rights & Responsibilities:</h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    <li>Access to the virtual environment</li>
-                    <li>Participation in community forums</li>
-                    <li>Basic resource allocation</li>
+                    <li>Direct involvement in platform development</li>
+                    <li>Participation in governance decisions</li>
+                    <li>Recognition as founding contributors</li>
+                    <li>Access to advanced resource management tools</li>
+                    <li>Responsibility to help establish initial governance structures</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Citizen DC [Country]</h3>
+                <p className="text-gray-700 mb-4">
+                  Every citizen of a participating country receives an unrestricted right to obtain citizenship in their country's virtual replica. This ensures broad participation and representation in the digital nation-building process.
+                </p>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-gray-800 mb-2">Rights & Responsibilities:</h4>
+                  <ul className="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Automatic eligibility for citizens of participating nations</li>
+                    <li>Participation in virtual country activities</li>
+                    <li>Access to resource management systems</li>
                     <li>Ability to delegate resource management to Captain Dilons</li>
+                    <li>Participation in community forums and discussions</li>
                   </ul>
                 </div>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <div className="flex items-center mb-4">
-                  <div className="bg-yellow-400 text-white p-2 rounded-full mr-4">
-                    <span className="block text-center font-bold">2</span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800">Resource Steward</h3>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Dilonland Citizen</h3>
                 <p className="text-gray-700 mb-4">
-                  The second tier, achieved by demonstrating commitment to the community and basic resource management skills. Resource Stewards take on greater responsibility in managing specific resource areas.
+                  For those interested in the broader Dilon Concept implementation, citizenship in the international virtual country Dilonland is available through NFT purchase at <a href="https://dilonland.org" className="text-yellow-500 hover:text-yellow-700" target="_blank" rel="noopener noreferrer">dilonland.org</a>.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-gray-800 mb-2">Rights & Responsibilities:</h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    <li>All Resource Citizen rights</li>
-                    <li>Participation in specialized working groups</li>
-                    <li>Ability to submit proposals for community consideration</li>
-                    <li>Access to additional virtual resources</li>
-                    <li>Responsibility to contribute to resource management initiatives</li>
+                    <li>Open to anyone globally</li>
+                    <li>NFT-based citizenship verification</li>
+                    <li>Participation in the international virtual country</li>
+                    <li>Access to Dilonland DAO resources and activities</li>
+                    <li>Opportunity to contribute to the global implementation of Dilon Concept</li>
                   </ul>
+                </div>
+                <div className="mt-4 p-4 bg-yellow-100 rounded-lg">
+                  <p className="text-gray-800">
+                    <strong>Note:</strong> Dilonland citizenship is managed through <a href="https://dilonland.org" className="text-yellow-500 hover:text-yellow-700 underline" target="_blank" rel="noopener noreferrer">dilonland.org</a>, a separate platform focused on the international virtual country implementation of the Dilon Concept.
+                  </p>
                 </div>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <div className="flex items-center mb-4">
-                  <div className="bg-yellow-400 text-white p-2 rounded-full mr-4">
-                    <span className="block text-center font-bold">3</span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800">Resource Guardian (Captain Dilon)</h3>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Captain Dilon Status</h3>
                 <p className="text-gray-700 mb-4">
-                  The third tier, earned by building a virtual Dilon House and demonstrating self-sufficiency for one year. Resource Guardians (also known as Captain Dilons) have voting rights and significant governance responsibilities.
+                  This special status can be granted to existing citizens who pass the Captain Dilon examination. During the initial phases, Dilon may appoint Captain Dilon status to qualified individuals to jump-start the project.
                 </p>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-gray-800 mb-2">Rights & Responsibilities:</h4>
                   <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    <li>All previous tier rights</li>
+                    <li>Enhanced governance rights</li>
+                    <li>Leadership responsibilities</li>
+                    <li>Resource management authority</li>
                     <li>Voting rights in the General Assembly</li>
                     <li>Ability to manage resources entrusted by other citizens</li>
-                    <li>Eligibility for committee positions</li>
-                    <li>Responsibility to mentor lower-tier citizens</li>
-                    <li>Participation in defining criteria for citizenship waves</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <div className="flex items-center mb-4">
-                  <div className="bg-yellow-400 text-white p-2 rounded-full mr-4">
-                    <span className="block text-center font-bold">4</span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800">Founding Steward</h3>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  The highest tier, reserved for early contributors and those who have demonstrated exceptional commitment and contribution to the Dilonland DAO. Founding Stewards have the greatest governance influence and responsibility.
-                </p>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-800 mb-2">Rights & Responsibilities:</h4>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    <li>All previous tier rights</li>
-                    <li>Leadership positions in governance committees</li>
-                    <li>Ability to propose major structural changes</li>
-                    <li>Responsibility for long-term strategic planning</li>
-                    <li>Mentorship of Resource Guardians</li>
-                    <li>Representation of Dilonland DAO in external partnerships</li>
+                    <li>Responsibility to mentor other citizens</li>
                   </ul>
                 </div>
               </div>
@@ -159,80 +144,65 @@ const CitizenshipNFTsPage: React.FC = () => {
         {/* Technical Implementation Section */}
         <section className="py-12 px-4">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Technical Implementation</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Platform Implementation</h2>
             <div className="w-full max-w-3xl mx-auto h-1 bg-yellow-400 mb-8"></div>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              The NFT citizenship system is implemented on the Polygon blockchain, chosen for its balance of transaction costs, ecosystem maturity, and NFT support. This technical foundation ensures transparency, security, and accessibility.
+              The DilonConceptDAO platform is built on secure, scalable technology that enables governments to create and manage virtual country replicas with robust citizenship management systems.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">NFT Standards</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Digital Twin Technology</h3>
                 <p className="text-gray-700">
-                  Citizenship NFTs follow the ERC-721 standard with additional metadata extensions to store citizenship tier information, resource rights, and governance participation records. This ensures compatibility with major NFT marketplaces and wallets while providing the specialized functionality needed for the DAO.
+                  Our platform uses advanced digital twin technology to create accurate virtual replicas of participating countries, including geographic features, resource distribution, and population demographics to enable realistic simulation and testing.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Smart Contracts</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Citizenship Management</h3>
                 <p className="text-gray-700">
-                  A suite of smart contracts manages citizenship issuance, tier advancement, resource rights, and governance participation. These contracts are designed with security, transparency, and upgradeability in mind, allowing the system to evolve while maintaining trust.
+                  A comprehensive citizenship management system allows governments to register citizens, track participation, and manage resource rights within their virtual country replica, ensuring transparent and equitable access.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">User Interface</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Governance Framework</h3>
                 <p className="text-gray-700">
-                  A user-friendly interface allows citizens to view their NFT status, track progress toward advancement, participate in governance, and manage their resource rights. The interface is designed to be accessible to users with varying levels of blockchain experience.
+                  The platform includes customizable governance frameworks that allow each participating country to implement and test various decision-making processes based on Dilon Concept principles while maintaining their unique cultural and political contexts.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-t-4 border-yellow-400">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Security Measures</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Data Analytics</h3>
                 <p className="text-gray-700">
-                  Multiple security measures protect the NFT citizenship system, including multi-signature requirements for critical operations, time-locked upgrades, and regular security audits. These measures ensure the integrity and reliability of the citizenship system.
+                  Comprehensive data analytics tools provide governments with valuable insights into resource allocation, citizen participation, and governance effectiveness, enabling data-driven decision-making and continuous improvement.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* How to Obtain Citizenship Section */}
+        {/* Government Participation Section */}
         <section className="py-12 px-4 bg-gray-50">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">How to Obtain Citizenship</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">How Governments Can Participate</h2>
             <div className="w-full max-w-3xl mx-auto h-1 bg-yellow-400 mb-8"></div>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              Citizenship in the Dilonland DAO is distributed in waves, with specific criteria for each wave determined by the governance process. The initial wave will establish the founding community that will help shape the future of the virtual country.
+              Governments interested in exploring the Dilon Concept through virtual country replicas can join the DilonConceptDAO platform through a structured partnership process designed to ensure successful implementation.
             </p>
             
             <div className="bg-white p-6 rounded-lg shadow-md mb-8">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">First Wave Citizenship</h3>
-              <p className="text-gray-700 mb-4">
-                The first 1-10K citizenships may be given away for free with 1st wave Dilonland NFTs. These early citizens will have a unique opportunity to influence the development of the DAO and establish its initial governance structures.
-              </p>
-              <div className="bg-yellow-100 p-4 rounded-lg">
-                <p className="text-gray-800 italic">
-                  "First wave citizens will be pioneers in a new model of societal organization, helping to test and refine the principles of the Dilon Concept in a virtual environment before potential real-world implementation."
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Subsequent Waves</h3>
-              <p className="text-gray-700 mb-4">
-                After the first wave, subsequent citizenship waves will be governed by criteria defined by Captain Dilons from previous waves. This ensures that the community grows in a controlled manner aligned with the principles of the Dilon Concept.
-              </p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Partnership Process</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="bg-yellow-400 text-white p-2 rounded-full mr-3 mt-1 flex-shrink-0">
                     <span className="block text-center font-bold">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Application Process</h4>
-                    <p className="text-gray-700">Interested individuals will submit applications demonstrating their understanding of and commitment to the Dilon Concept principles.</p>
+                    <h4 className="font-semibold text-gray-800">Initial Consultation</h4>
+                    <p className="text-gray-700">Government representatives meet with our team to discuss objectives, requirements, and potential implementation approaches for their virtual country replica.</p>
                   </div>
                 </div>
                 
@@ -241,8 +211,8 @@ const CitizenshipNFTsPage: React.FC = () => {
                     <span className="block text-center font-bold">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Community Review</h4>
-                    <p className="text-gray-700">Applications will be reviewed by existing Captain Dilons according to the established criteria for the current wave.</p>
+                    <h4 className="font-semibold text-gray-800">Partnership Agreement</h4>
+                    <p className="text-gray-700">A formal partnership agreement outlines the scope, timeline, resource requirements, and expected outcomes for the virtual country implementation.</p>
                   </div>
                 </div>
                 
@@ -251,8 +221,8 @@ const CitizenshipNFTsPage: React.FC = () => {
                     <span className="block text-center font-bold">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">NFT Minting</h4>
-                    <p className="text-gray-700">Approved applicants will receive their Resource Citizen NFT, granting them basic access to the virtual environment.</p>
+                    <h4 className="font-semibold text-gray-800">Platform Configuration</h4>
+                    <p className="text-gray-700">Our technical team works with government representatives to configure the platform according to the country's specific needs, including resource mapping and citizenship registration.</p>
                   </div>
                 </div>
                 
@@ -261,28 +231,37 @@ const CitizenshipNFTsPage: React.FC = () => {
                     <span className="block text-center font-bold">4</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Onboarding</h4>
-                    <p className="text-gray-700">New citizens will participate in an onboarding process to familiarize themselves with the virtual environment and community norms.</p>
+                    <h4 className="font-semibold text-gray-800">Citizen Onboarding</h4>
+                    <p className="text-gray-700">The government implements a citizen onboarding process, starting with Founding Citizens who will help develop and refine the virtual country implementation.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-yellow-400 text-white p-2 rounded-full mr-3 mt-1 flex-shrink-0">
+                    <span className="block text-center font-bold">5</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Ongoing Support and Development</h4>
+                    <p className="text-gray-700">Our team provides ongoing technical support, training, and development assistance to ensure the successful implementation and evolution of the virtual country.</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Call to Action Section */}
-        <section className="py-16 bg-[#4B2E83] text-white text-center">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-6">Join the Dilonland Community</h2>
-            <p className="text-lg mb-8 max-w-3xl mx-auto">
-              Stay informed about upcoming citizenship opportunities and be among the first to participate in this groundbreaking virtual implementation of the Dilon Concept.
-            </p>
-            <a 
-              href="/contact" 
-              className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-md transition-colors"
-            >
-              Get Involved
-            </a>
+            
+            <div className="bg-yellow-100 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready to Explore?</h3>
+              <p className="text-gray-700 mb-4">
+                If your government is interested in exploring how the DilonConceptDAO platform can help create a virtual replica of your country to test and implement resource-based economic principles, we invite you to contact us for an initial consultation.
+              </p>
+              <div className="text-center">
+                <a 
+                  href="/contact" 
+                  className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-md transition-colors"
+                >
+                  Request Government Partnership
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </div>

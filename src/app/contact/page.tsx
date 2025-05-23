@@ -183,8 +183,8 @@ const ContactPage: React.FC = () => {
                 <p className="text-gray-700 mb-4">
                   For general inquiries and support
                 </p>
-                <a href="mailto:info@dilonconceptdao.org" className="text-[#4B2E83] font-semibold hover:text-yellow-500 transition-colors">
-                  info@dilonconceptdao.org
+                <a href="mailto:dilonconcept@gmail.com" className="text-[#4B2E83] font-semibold hover:text-yellow-500 transition-colors">
+                  dilonconcept@gmail.com
                 </a>
               </div>
               
@@ -194,12 +194,12 @@ const ContactPage: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Discord</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Telegram</h3>
                 <p className="text-gray-700 mb-4">
                   Join our community discussions
                 </p>
-                <a href="https://discord.gg/dilonconceptdao" className="text-[#4B2E83] font-semibold hover:text-yellow-500 transition-colors">
-                  discord.gg/dilonconceptdao
+                <a href="https://t.me/DilonConceptDA0" className="text-[#4B2E83] font-semibold hover:text-yellow-500 transition-colors">
+                  t.me/DilonConceptDA0
                 </a>
               </div>
               
@@ -209,12 +209,12 @@ const ContactPage: React.FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Twitter</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">X</h3>
                 <p className="text-gray-700 mb-4">
                   Follow us for updates and news
                 </p>
-                <a href="https://twitter.com/DilonConceptDAO" className="text-[#4B2E83] font-semibold hover:text-yellow-500 transition-colors">
-                  @DilonConceptDAO
+                <a href="https://twitter.com/DilonConcept" className="text-[#4B2E83] font-semibold hover:text-yellow-500 transition-colors">
+                  @DilonConcept
                 </a>
               </div>
             </div>
