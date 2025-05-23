@@ -1,29 +1,9 @@
 [build]
-  # This is the directory to publish, relative to the base directory.
-  # For a simple static site where index.html is at the root of the repository,
-  # this is typically "." or "public" or "dist".
-  # Since our index.html is at the root of the website_v2 folder,
-  # and if website_v2 is the root of your Git repository, publish will be "."
-  publish = "."
+  command = "npm run build"
+  publish = "out"
 
-  # There is no build command needed for this simple static HTML/CSS/JS site.
-  # If you were using a static site generator (like Jekyll, Hugo, Eleventy)
-  # or a frontend framework (like React, Vue, Angular with a build step),
-  # you would specify the build command here.
-  command = ""
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
-# Optional: You can specify a functions directory if you plan to use Netlify Functions.
-# [functions]
-#   directory = "netlify/functions"
-
-# Optional: Redirects and rewrites
-# [[redirects]]
-#   from = "/old-path"
-#   to = "/new-path"
-#   status = 301
-
-# [[redirects]]
-#  from = "/*"
-#  to = "/index.html"
-#  status = 200
-
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
